@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+# 🚦 TrafficAI  
+### Real-Time Motorcycle Violation Detection & Automated Enforcement System
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 📌 Project Info
 
-## How can I edit this code?
+TrafficAI is an AI-powered traffic monitoring and enforcement system designed to detect motorcycle-related violations such as **triple riding**, **helmet absence**, and **mobile phone usage** in real-time. The system integrates deep learning, computer vision, OCR, and a full-stack web application to automate detection, identification, and challan generation.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🚀 Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- Real-time traffic violation detection  
+- Motorcycle & rider detection  
+- Triple riding detection  
+- Helmet violation detection  
+- Mobile usage detection  
+- OCR-based number plate recognition  
+- Automated challan generation (PDF)  
+- Admin dashboard for monitoring  
+- Violation logs and audit tracking  
+- End-to-end pipeline (Detection → Enforcement)
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🧠 System Workflow
+Camera → Frames → YOLOv8 Detection →
+Rider Mapping → Violation Detection →
+OCR → Database Lookup →
+Challan Generation → Admin Dashboard
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Tech Stack
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Frontend
+- React  
+- TypeScript  
+- Tailwind CSS  
+- shadcn/ui  
+- Vite  
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Backend
+- Python  
+- Flask  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### AI / ML
+- YOLOv8 (Ultralytics)  
+- OpenCV  
+- Tesseract OCR  
+
+### Database
+- SQLite / SQL  
+
+---
+
+## 💻 How to Run the Project
+
+---
+
+### 🔧 Prerequisites
+
+Make sure you have installed:
+- Node.js (v16 or above)
+- npm
+- Python 3.9+
+
+---
+
+## 📥 Installation & Setup
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone <my git url>
+cd <PROJECTNAME>
+
+npm install
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
